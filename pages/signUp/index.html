@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../../assets/styles/globalStyles.css">
+    <title>Регистрация</title>
+  </head>
+  <body class="sign-up">
+    <main class="container">
+      <div class="form">
+        <h2 class="form__title">Регистрация</h2>
+        <div class="form__container sign-up__form-container">
+          <label class="input">
+            <span class="input__title">Почта</span>
+            <input type="email" class="input__field" value="email" name="email">
+            <span class="input__error">Неверная почта</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Логин</span>
+            <input type="text" class="input__field" value="login" name="login">
+            <span class="input__error">Неверный логин</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Имя</span>
+            <input type="text" class="input__field" value="first_name" name="first_name">
+            <span class="input__error">Неверное имя</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Фамилия</span>
+            <input type="text" class="input__field" value="second_name" name="second_name">
+            <span class="input__error">Неверная фамилия</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Телефон</span>
+            <input type="tel" class="input__field" value="phone" name="phone">
+            <span class="input__error">Неверная фамилия</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Пароль</span>
+            <input type="password" class="input__field" value="password" name="password">
+            <span class="input__error">Неверный пароль</span>
+          </label>
+          <label class="input">
+            <span class="input__title">Пароль (еще раз)</span>
+            <input type="password" class="input__field" value="repeatPassword" name="repeatPassword">
+            <span class="input__error">Пароли не совпадают</span>
+          </label>
+        </div>
+        <button class="btn">Зарегистрироваться</button>
+        <a class="link" href="/pages/signIn/">Вернуться к авторизации</a>
+      </div>
+    </main>
+  </body>
+</html>
