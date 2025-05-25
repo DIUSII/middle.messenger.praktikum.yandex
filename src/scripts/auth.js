@@ -5,9 +5,8 @@ import {formLayout} from '../layouts';
 
 import '../styles/main.scss'
 
-Handlebars.registerPartial('button', button);
-
 const layout = Handlebars.compile(formLayout);
+const buttonTemplate = Handlebars.compile(button);
 const inputTemplate = Handlebars.compile(input);
 const linkTemplate = Handlebars.compile(link);
 
@@ -18,9 +17,11 @@ const inputsHtml = [
 
 const linkHtml = `${linkTemplate({href: '/register.html', text: 'Нет аккаунта?'})}`;
 
+const buttonTemplateHtml = `${buttonTemplate({text: 'Авторизоваться', onClick: "window.location.href = '/dashboard'"})}`;
+
 const html = layout({
   title: 'Вход',
-  buttonText: 'Авторизоваться',
+  button: buttonTemplateHtml,
   inputs: inputsHtml,
   footerLink: linkHtml
 });

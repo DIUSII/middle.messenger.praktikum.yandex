@@ -3,6 +3,7 @@ import string from 'vite-plugin-string';
 import path from 'path';
 
 export default defineConfig({
+  base: './',
   server: {
     port: 3000
   },
@@ -12,7 +13,7 @@ export default defineConfig({
         index: path.resolve(__dirname, 'index.html'),
         register: path.resolve(__dirname, 'register.html'),
         404: path.resolve(__dirname, '404.html'),
-        500: path.resolve(__dirname, '505.html'),
+        500: path.resolve(__dirname, '500.html'),
         dashboard: path.resolve(__dirname, 'dashboard.html'),
         profile: path.resolve(__dirname, 'profile.html'),
       }
