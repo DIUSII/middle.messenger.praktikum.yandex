@@ -12,7 +12,8 @@
     "dev": "vite",
     "start": "npm run build && serve dist",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "act -W .github/workflows/tests.yml --env GITHUB_HEAD_REF=sprint_1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
