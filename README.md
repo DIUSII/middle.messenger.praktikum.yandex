@@ -41,5 +41,6 @@ yarn start
 [404](http://localhost:3000/404)
 
 # Ресурсы
-Figma [Ссылка на макет](https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=1-498&t=GoBs6ASoSg8TSqwU-0)\
-Netlify [Ссылка на проект]
+Figma [Ссылка на макет](https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=1-498&t=GoBs6ASoSg8TSqwU-0)
+
+Netlify [Ссылка на проект](https://shiny-pastelito-16e434.netlify.app/)
