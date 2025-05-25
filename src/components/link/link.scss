@@ -1,0 +1,13 @@
+.link {
+  font-size: 11px;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition: opacity 0.3s ease-in;
+
+  color: #3369F3;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

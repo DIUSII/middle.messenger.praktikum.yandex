@@ -1,0 +1,25 @@
+.error {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error__title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #1E1E1E;
+
+  margin: 0 0 20px;
+}
+
+.error__description {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1E1E1E;
+
+  margin: 0 0 68px;
+}

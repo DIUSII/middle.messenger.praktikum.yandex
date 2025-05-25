@@ -1,0 +1,35 @@
+.profile-input {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #EAEAEA;
+
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+}
+
+.profile-input__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1E1E1E;
+}
+
+.profile-input__field {
+  display: inline;
+
+  border: none;
+  outline: none;
+
+  font-size: 13px;
+  font-weight: 500;
+  color: #999999;
+  text-align: right;
+
+  padding: 0;
+
+  &:disabled {
+    background: transparent;
+  }
+}

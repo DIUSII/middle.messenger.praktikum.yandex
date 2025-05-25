@@ -1,0 +1,18 @@
+@use '../components/input/input' as *;
+@use '../components/button/button' as *;
+@use '../components/link/link' as *;
+@use '../components/icon-button/icon-button' as *;
+
+@use '../layouts/error-layout/error-layout' as *;
+@use '../layouts/form-layout/form-layout' as *;
+
+* {
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
