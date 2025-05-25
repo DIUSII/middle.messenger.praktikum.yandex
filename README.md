@@ -4,10 +4,10 @@
 # Установка
 Установка зависимостей
 ```
-npm i && npm i -g serve
+npm i
 ```
 ```
-yarn && yarn global add serve
+yarn
 ```
 Запуск проекта
 ```
