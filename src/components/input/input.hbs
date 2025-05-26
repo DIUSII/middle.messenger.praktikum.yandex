@@ -1,0 +1,9 @@
+<label class="input">
+  {{#if label}}
+    <span class="input__label">{{label}}</span>
+  {{/if}}
+  <input name="{{name}}" type="{{type}}" class="input__field">
+  {{#if error}}
+    <span class="input__error">{{error}}</span>
+  {{/if}}
+</label>

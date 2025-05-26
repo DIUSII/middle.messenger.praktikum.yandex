@@ -1,0 +1,40 @@
+.form {
+  width: 100dvw;
+  height: 100dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__content {
+  width: 340px;
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 0 6px 0 #00000024;
+  border-radius: 12px;
+
+  padding: 50px 30px 30px;
+}
+
+.form__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1E1E1E;
+  text-align: center;
+
+  margin: 0 0 40px;
+}
+
+.form__footer-button {
+  margin: 0 0 16px;
+}
+
+.form__footer-link {
+  display: flex;
+  justify-content: center;
+}

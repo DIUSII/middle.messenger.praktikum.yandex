@@ -1,0 +1,66 @@
+<div class="dashboard">
+  <div class="dashboard__chats">
+    <a class="dashboard__link" href="/profile">Профиль ></a>
+    <div class="dashboard__search">
+      <img src="/icons/search.svg" alt="search" class="dashboard__search-icon">
+      <input class="dashboard__search-field" name="search" type="text" placeholder="Поиск">
+    </div>
+    <ul class="dashboard__list">
+      {{#each chats}}
+        <li class="dashboard__item">
+          <div class="dashboard__avatar"></div>
+          <div class="dashboard__info-chat">
+            <div class="dashboard__item-head">
+              <span class="dashboard__first-name">{{this.first_name}}</span>
+              <span class="dashboard__time">{{this.time}}</span>
+            </div>
+            <div class="dashboard__last-message-container">
+              <p class="dashboard__last-message">
+                {{#if this.image}}
+                  Изображение
+                {{else if this.last_message}}
+                  {{#if this.type}}
+                    <span class="dashboard__last-message_bold">Вы:</span>
+                  {{/if}}
+                  {{this.last_message}}
+                {{/if}}
+              </p>
+              <div class="dashboard__notification">{{this.notification}}</div>
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="dashboard__chat">
+    <div class="dashboard__chat-head">
+      <div class="dashboard__chat-profile">
+        <div class="dashboard__avator"></div>
+        <span class="dashboard__first-name">Влад</span>
+      </div>
+      <img src="icons/user_management_buttons.svg" alt="search" class="dashboard__search-icon">
+    </div>
+    <div class="dashboard__body">
+      <div class="dashboard__body-content">
+        <div class="dashboard__date">19 июня</div>
+        <div class="dashboard__incoming-message">
+          <p>
+            Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила
+            Хассельблад адаптировать модель SWC для полетов на Луну.
+            Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще
+            находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+          </p>
+          <p>
+            Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали.
+            Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+          </p>
+        </div>
+        <p class="dashboard__outgoing-message">Круто!</p>
+      </div>
+    </div>
+    <form class="dashboard__footer">
+      <input type="text" class="dashboard__chat-message" placeholder="Сообщение" name="message">
+      {{{iconButton}}}
+    </form>
+  </div>
+</div>
